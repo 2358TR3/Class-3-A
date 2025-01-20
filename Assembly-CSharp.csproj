@@ -60,24 +60,29 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\SCRIPT\PlayerInteract.cs" />
     <Compile Include="Assets\SCRIPT\PlayerInteraction.cs" />
     <Compile Include="Assets\SCRIPT\PlayerInventory.cs" />
     <Compile Include="Assets\SCRIPT\HallwayTrash.cs" />
     <Compile Include="Assets\SCRIPT\ClassroomTrigger.cs" />
+    <Compile Include="Assets\SCRIPT\NoTrash.cs" />
     <Compile Include="Assets\SCRIPT\dialogue1.cs" />
+    <Compile Include="Assets\SCRIPT\NPCInteractable.cs" />
+    <Compile Include="Assets\SCRIPT\DestroyOnCollision.cs" />
+    <Compile Include="Assets\SCRIPT\CoconutThrow.cs" />
     <Compile Include="Assets\SCRIPT\MAINMENU\MainMenu.cs" />
-    <Compile Include="Assets\PlayerInteract.cs" />
     <Compile Include="Assets\Mess Maker Free\Scripts\MessMaker.cs" />
     <Compile Include="Assets\SCRIPT\FireTrigger.cs" />
     <Compile Include="Assets\SCRIPT\FireExtinguish.cs" />
     <Compile Include="Assets\Mess Maker Free\Scripts\SimpleController.cs" />
-    <Compile Include="Assets\dialogue1.cs" />
+    <Compile Include="Assets\SCRIPT\DestroyFire.cs" />
     <Compile Include="Assets\SCRIPT\WaterBucket.cs" />
     <Compile Include="Assets\Mess Maker Free\Scripts\MessMakerPoole.cs" />
     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
     <Compile Include="Assets\SCRIPT\QuestManager.cs" />
+    <Compile Include="Assets\SCRIPT\PickUpScript.cs" />
     <Compile Include="Assets\Mess Maker Free\Scripts\SimpleCamControl.cs" />
-    <Compile Include="Assets\NPCInteractable.cs" />
+    <Compile Include="Assets\SCRIPT\Dialogue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -1051,6 +1056,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Polyperfect.Universal.csproj">
+      <Project>{25AA6EA3-F286-28F2-99EB-F1D80C33FD61}</Project>
+      <Name>Polyperfect.Universal</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
