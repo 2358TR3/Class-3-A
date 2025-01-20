@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\MAINMENU\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\SCRIPT\\MAINMENU\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\WaterBucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\SCRIPT\\WaterBucket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\FireExtinguish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\SCRIPT\\FireExtinguish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\FireTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\SCRIPT\\FireTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\ClassroomTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\SCRIPT\\ClassroomTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\PlayerInteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\SCRIPT\\PlayerInteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,11 +46,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\MAINMENU\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\SCRIPT\\MAINMENU\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\MAINMENU\\MainMenu.cs",
+              "RelativeToolTip": "Assets\\SCRIPT\\MAINMENU\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T05:36:18.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FireTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\FireTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\SCRIPT\\FireTrigger.cs",
+              "ToolTip": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\FireTrigger.cs",
+              "RelativeToolTip": "Assets\\SCRIPT\\FireTrigger.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T04:18:48.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FireExtinguish.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\FireExtinguish.cs",
+              "RelativeDocumentMoniker": "Assets\\SCRIPT\\FireExtinguish.cs",
+              "ToolTip": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\FireExtinguish.cs",
+              "RelativeToolTip": "Assets\\SCRIPT\\FireExtinguish.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T04:17:26.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "WaterBucket.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\WaterBucket.cs",
+              "RelativeDocumentMoniker": "Assets\\SCRIPT\\WaterBucket.cs",
+              "ToolTip": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\WaterBucket.cs",
+              "RelativeToolTip": "Assets\\SCRIPT\\WaterBucket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T04:15:59.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClassroomTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\ClassroomTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\SCRIPT\\ClassroomTrigger.cs",
+              "ToolTip": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\ClassroomTrigger.cs",
+              "RelativeToolTip": "Assets\\SCRIPT\\ClassroomTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T04:14:45.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "dialogue1.cs",
               "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\dialogue1.cs",
               "RelativeDocumentMoniker": "Assets\\SCRIPT\\dialogue1.cs",
@@ -38,12 +123,11 @@
               "RelativeToolTip": "Assets\\SCRIPT\\dialogue1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T20:29:21.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T20:29:21.288Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "PlayerInteraction.cs",
               "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\PlayerInteraction.cs",
               "RelativeDocumentMoniker": "Assets\\SCRIPT\\PlayerInteraction.cs",
@@ -56,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "HallwayTrash.cs",
               "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\HallwayTrash.cs",
               "RelativeDocumentMoniker": "Assets\\SCRIPT\\HallwayTrash.cs",
@@ -68,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "PlayerInventory.cs",
               "DocumentMoniker": "C:\\Users\\Acer\\Documents\\GitHub\\Class-3-A\\Assets\\SCRIPT\\PlayerInventory.cs",
               "RelativeDocumentMoniker": "Assets\\SCRIPT\\PlayerInventory.cs",
