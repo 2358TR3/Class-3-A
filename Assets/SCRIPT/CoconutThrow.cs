@@ -4,36 +4,39 @@ using UnityEngine;
 
 public class CoconutThrow : MonoBehaviour
 {
+    public GameObject TrashObject; // Prefab to be thrown
+    public float ThrowForce; // Force to throw the object
+    public AudioClip throwSound; // Sound to play when throwing
+    private AudioSource audioSource; // Reference to AudioSource
 
-    public GameObject TrashObject;
-    public float ThrowForce;
-    
-    // Start is called before the first frame update
     void Start()
     {
-       
+        // Assign AudioSource from the current GameObject
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            //audio here nya
+            // Play throw sound
+            if (audioSource != null && throwSound != null)
+            {
+                audioSource.PlayOneShot(throwSound);
+            }
 
+            // Instantiate the TrashObject
             GameObject temp = Instantiate(TrashObject, transform.position, transform.rotation);
             Rigidbody rb = temp.GetComponent<Rigidbody>();
             rb.velocity = transform.TransformDirection(new Vector3(0, 0, ThrowForce));
             temp.name = "Trash";
 
-            if (temp.GetComponent<Rigidbody> ()==null)
+            if (temp.GetComponent<Rigidbody>() == null)
             {
                 Debug.Log("Component Missing!");
                 temp.AddComponent<Rigidbody>();
 
                 Physics.IgnoreCollision(transform.root.GetComponent<Collider>(), temp.GetComponent<Collider>(), true);
-
-                
             }
         }
     }

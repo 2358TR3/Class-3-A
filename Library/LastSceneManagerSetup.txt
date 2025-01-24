@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/helping hand game.unity
+- path: Assets/helping hand game.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -1,70 +1,108 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class QuestManager : MonoBehaviour
 {
-    [System.Serializable]
-    public class Quest
+    public Image horizontalProgressBar;
+    public GameObject winningCanvas;
+
+    [SerializeField] private int totalItems = 5;
+    private int itemsCollected = 0;
+
+    private bool isQuestActive = false;
+    private bool hasTalkedToNPC = false; // Tracks if the player has talked to the NPC
+
+    private void Start()
     {
-        public string description;
-        public bool requiresTrashCollection;
-        public int trashRequired;
+        if (horizontalProgressBar != null)
+            horizontalProgressBar.gameObject.SetActive(false);
+
+        if (winningCanvas != null)
+            winningCanvas.SetActive(false);
     }
 
-    public Text questText;
-    public List<Quest> quests;
-    private int currentQuestIndex = 0;
-    private int trashCollected = 0;
-
-    void Start()
+    // Called when the player interacts with the NPC
+    public void TalkToNPC()
     {
-        UpdateQuestText();
+        hasTalkedToNPC = true;
+        ActivateQuest();
+        Debug.Log("Player has talked to the NPC. Quest is now active!");
     }
 
-    void UpdateQuestText()
+    public void ActivateQuest()
     {
-        if (questText != null && currentQuestIndex < quests.Count)
-        {
-            Quest currentQuest = quests[currentQuestIndex];
-            questText.text = currentQuest.description;
+        if (horizontalProgressBar == null) return;
 
-            if (currentQuest.requiresTrashCollection)
-            {
-                questText.text += $"\nTrash Collected: {trashCollected}/{currentQuest.trashRequired}";
-            }
-        }
-        else if (questText != null)
+        isQuestActive = true;
+        itemsCollected = 0;
+        horizontalProgressBar.fillAmount = 0;
+        horizontalProgressBar.gameObject.SetActive(true);
+        Debug.Log("Quest activated: Find the missing items!");
+    }
+
+    public bool IsQuestActive()
+    {
+        return isQuestActive;
+    }
+
+    public void CollectItem()
+    {
+        if (!hasTalkedToNPC)
         {
-            questText.text = "All quests completed! Congratulations!";
+            Debug.Log("You must talk to the NPC before collecting items.");
+            return;
+        }
+
+        if (!isQuestActive)
+        {
+            Debug.Log("The quest is not active yet.");
+            return;
+        }
+
+        itemsCollected++;
+        float progress = (float)itemsCollected / totalItems;
+        horizontalProgressBar.fillAmount = progress;
+
+        Debug.Log($"Items collected: {itemsCollected}/{totalItems}");
+
+        if (itemsCollected >= totalItems)
+        {
+            CompleteQuest();
         }
     }
 
-    public void CollectTrash()
+    public bool AreAllItemsCollected()
     {
-        if (currentQuestIndex < quests.Count && quests[currentQuestIndex].requiresTrashCollection)
-        {
-            trashCollected++;
-            UpdateQuestText();
+        return itemsCollected >= totalItems;
+    }
 
-            if (trashCollected >= quests[currentQuestIndex].trashRequired)
-            {
-                CompleteCurrentQuest();
-            }
+    private void CompleteQuest()
+    {
+        Debug.Log("Quest complete! All items collected.");
+        isQuestActive = false;
+
+        if (horizontalProgressBar != null)
+            horizontalProgressBar.gameObject.SetActive(false);
+
+        ShowWinningScreen();
+    }
+
+    private void ShowWinningScreen()
+    {
+        if (winningCanvas != null)
+        {
+            winningCanvas.SetActive(true); // Show the winning screen
+            StartCoroutine(HideWinningScreenAfterDelay(3f)); // Hide after 5 seconds
         }
     }
 
-    public void CompleteCurrentQuest()
+    // Coroutine to hide the winning screen after a delay
+    private IEnumerator HideWinningScreenAfterDelay(float delay)
     {
-        if (currentQuestIndex < quests.Count)
-        {
-            currentQuestIndex++;
-            trashCollected = 0; // Reset trash count for the next quest
-            UpdateQuestText();
-        }
-        else
-        {
-            Debug.Log("All quests completed.");
-        }
+        yield return new WaitForSeconds(delay); // Wait for the specified time
+        if (winningCanvas != null)
+            winningCanvas.SetActive(false); // Hide the winning screen
     }
 }

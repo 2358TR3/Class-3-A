@@ -17,11 +17,11 @@ GameObject:
   - component: {fileID: -3433599722905085070}
   m_Layer: 0
   m_Name: Soda Can Green Crushed
-  m_TagString: Water
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4243499929009326101
 Transform:
   m_ObjectHideFlags: 0
