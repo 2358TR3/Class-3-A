@@ -141,4 +141,18 @@ public class PickUpScript : MonoBehaviour
             //if your player is small, change the -0.5f to a smaller number (in magnitude) ie: -0.1f
         }
     }
+    private void OnPickUp()
+    {
+
+    if (CompareTag("Player")) // Ensure the Player has the "Player" tag
+        {
+            Quest2 quest2 = FindObjectOfType<Quest2>();
+            if (quest2 != null)
+            {
+                quest2.DestroyedItem();
+            }
+    }
+    
+
+  }
 }

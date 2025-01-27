@@ -116,6 +116,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
@@ -369,8 +370,11 @@
 "Assets/Mess Maker Free/Scripts/SimpleCamControl.cs"
 "Assets/Mess Maker Free/Scripts/SimpleController.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs"
+"Assets/SCRIPT/CharacterAutoRotate.cs"
+"Assets/SCRIPT/CharacterMoveBackAndForth.cs"
 "Assets/SCRIPT/ClassroomTrigger.cs"
 "Assets/SCRIPT/CoconutThrow.cs"
+"Assets/SCRIPT/CollectItem.cs"
 "Assets/SCRIPT/DestroyFire.cs"
 "Assets/SCRIPT/DestroyOnCollision.cs"
 "Assets/SCRIPT/Dialogue.cs"
@@ -387,9 +391,13 @@
 "Assets/SCRIPT/PlayerInteract.cs"
 "Assets/SCRIPT/PlayerInteraction.cs"
 "Assets/SCRIPT/PlayerInventory.cs"
+"Assets/SCRIPT/PreventPass.cs"
+"Assets/SCRIPT/Quest2.cs"
 "Assets/SCRIPT/QuestManager.cs"
 "Assets/SCRIPT/StationeryItem.cs"
 "Assets/SCRIPT/WaterBucket.cs"
+"Assets/SCRIPT/WaterCollect.cs"
+"Assets/SCRIPT/WaterThrow.cs"
 -langversion:9.0
 /deterministic
 /optimize+
